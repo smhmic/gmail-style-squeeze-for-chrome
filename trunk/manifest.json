@@ -1,0 +1,27 @@
+{
+   "manifest_version": 2,
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "gmail.css" ],
+      "js": [ "jquery-1.8.2.min.js","content.js" ],
+      "matches": [ "*://mail.google.com/*" ]
+   } ],
+	"background": {
+		"page": "background.html"
+	},
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "icons": {
+      "128": "images/128x128.png",
+      "16": "images/16x16.png",
+      "64": "images/64x64.png"
+   },
+   "name": "__MSG_extension_name__",
+   "page_action": {
+      "default_icon": "images/16x16.png",
+      "default_title": "__MSG_page_action_title__"
+   },
+   "permissions": [ "tabs", "*://mail.google.com/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.13"
+}
