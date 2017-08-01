@@ -23,5 +23,5 @@
    },
    "permissions": [ "tabs", "*://mail.google.com/*" ],
    "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "1.0.13"
+   "version": "1.0.14"
 }
