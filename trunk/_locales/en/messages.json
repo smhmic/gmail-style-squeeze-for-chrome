@@ -11,6 +11,6 @@
    
    "extension_description": {
       "description": "Extension description.",
-      "message": "Makes minor changes to the Gmail interface.  Makes labels, toolbar buttons, scrollbars, message headers take up less space.  Makes certain elements stand out visually, like giving message headers a blue background, and framing inline message context messages (i.e. \"click to display images\") in pale yellow."
+      "message": "Makes minor changes to the Gmail interface for more efficient use of screen estate."
    }
 }
