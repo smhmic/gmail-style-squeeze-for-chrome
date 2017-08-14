@@ -22,9 +22,6 @@
 
 body{}
 
-body .aim div, body .xY * { transition: color, background 180ms ease-in-out; -webkit-transition: color,background 180ms ease-in-out; }
-body .aig *, body .LrBjie .aim > div { transition:none!important; -webkit-transition:none!important; }
-
 /* scrollbars */
 /* to override gmail styles: .Tm::-webkit-scrollbar, .lKgBkb::-webkit-scrollbar, .aXjCH::-webkit-scrollbar, .J-M::-webkit-scrollbar*/
 html body *::-webkit-scrollbar,
@@ -35,8 +32,6 @@ html body *::-webkit-scrollbar-corner,
 html body *::-webkit-resizer {
 z-index: 9999999 !important;
 position: relative !important;
-transition: all 400ms ease-in-out !important;
--webkit-transition: all 400ms ease-in-out !important;
 width: 9px !important;
 overflow: hidden !important;
 
@@ -109,15 +104,17 @@ body .G-Ni:hover, body .T-I:hover { opacity: 1; }*/
 /* body .G-Ni > div, body .G-Ni > * > .J-J5-Ji, body .T-I-ax7 { background:rgba(230,230,230,0.2) !important;  }
 body .G-Ni > div:hover, body .G-Ni > * > .J-J5-Ji:hover, body .T-I-ax7:hover { background:rgba(230,230,230,1) !important;  }
 */
-body div.T-I-ax7,body div.T-I-ax7 { background:rgba(230,230,230,0.2) !important; border-color:rgba(0,0,0,0.2) !important;  }
-body div.T-I-ax7[role="button"]:hover,body div.T-I-ax7[role="button"]:hover { background:rgba(255,255,255,0.5) !important; border-color:rgba(0,0,0,0.5) !important; }
-body div.T-I-ax7[role="button"] * { text-shadow:none !important;  }
-body .T-I { min-width: 24px; margin-right: 3px; }
-body .T-I-Js-IF { margin-right: 0px; }
-body .apF { margin-left: 3px !important;  }
-body .T-I.apF { min-width: 12px;  }
-body .ash.T-I { margin-left: 3px; }
-body .T-I.apG { padding: 0 3.5px 0 0px; min-width: 1px; }
+body .aqK div.T-I-ax7,
+body .aqK div.T-I-ax7 { background:rgba(230,230,230,0.2) !important; border-color:rgba(0,0,0,0.2) !important;  }
+body .aqK div.T-I-ax7[role="button"]:hover,
+body .aqK div.T-I-ax7[role="button"]:hover { background:rgba(255,255,255,0.5) !important; border-color:rgba(0,0,0,0.5) !important; }
+body .aqK div.T-I-ax7[role="button"] * { text-shadow:none !important;  }
+body .aqK .T-I { min-width: 24px; margin-right: 3px; }
+body .aqK .T-I-Js-IF { margin-right: 0px; }
+body .aqK .apF { margin-left: 3px !important;  }
+body .aqK .T-I.apF { min-width: 12px;  }
+body .aqK .ash.T-I { margin-left: 3px; }
+body .aqK .T-I.apG { padding: 0 3.5px 0 0px; min-width: 1px; }
 /* compose/newcontact button */
 body .pp .T-I-KE { /* background:rgba(230,230,230,0.2) !important; border: 1px solid rgba(0,0,0,0.1); color: rgba(0,0,0,0.7); */ z-index:2;/* fix to place behind chat menu dropdown */ }
 body .pp .T-I-KE:hover { background:rgba(255,255,255,0.5) !important; border-color: rgba(0,0,0,0.3); color: rgba(0,0,0,0.8);!important; }
@@ -126,11 +123,13 @@ body .ZZ .T-I { min-width: 54px;  }
 
 /* * * * * * * * * * * */
 /* g suite header 2017 */
-body .gb_kf {
+body .gb_kf,
+body .gb_mf {
 	height: 36px;
 }
 body #gba,
-body .gb_kf>.gb_R {
+body .gb_kf>.gb_R,
+body .gb_mf>.gb_R {
 	height: 36px;
 line-height: 34px;
 }
@@ -269,11 +268,13 @@ body .ar * { padding: 0; text-overflow: ellipsis; overflow: hidden; max-width: 1
 body .ar > div[title="Inbox"], body div.hN[title="Search for all messages with label Inbox"] { text-transform:uppercase; font-size:79%; }
 
 /* from and tags hover */
+/*
 body  .apu:hover, body  .apu:hover .ar,body  .apu:hover * { transition-delay: 800ms!important; -webkit-transition-delay: 800ms!important;  }
 body .UI>.nH>.no .xY .yW { transition: opacity 450ms ease-in; -webkit-transition: opacity 450ms ease-in;  }
 body  .apu, body  .apu *,  body .UI>.nH>.no .xY .yW * { transition: all 450ms ease-in; -webkit-transition: all 450ms ease-in;  }
 body .UI>.nH>.no .xY .yW:hover, body .UI>.nH>.no .xY .yW:hover * { transition: all 40ms ease-out; -webkit-transition: all 40ms ease-out;  }
 body  .apu, body  .apu:hover *, body .xY .yW:hover * { transition: all 40ms ease-out; -webkit-transition: all 40ms ease-out;  }
+*/
 body  .apu:hover { max-width: 92%; opacity: 1!important; }
 body  .apu:hover .ar { max-width: 100%; }
 /* message title overlay over tags and clarify on hover *//*
@@ -351,7 +352,7 @@ body .LrBjie .aim * { height: 100%; text-align: center; vertical-align:middle;  
 body .LrBjie .aim .aio { margin-left:0px!important;   }
 /* main labels + category labels */
 body .LrBjie > .TK { margin:0 6px; padding: 0 0px 2px; }
-body .LrBjie > .TK [style="margin-left:12px"] { margin-left:0!important } 
+body .LrBjie > .TK [style="margin-left:12px"] { margin-left:0!important }
 /* category labels */
 body .LrBjie.aJZ.a0L > .TK > .aim:first-child { width: 95%; }
 /* avoid resize on hover */
@@ -406,8 +407,15 @@ body .aim span.n1 > a.n0  { opacity: 1 !Important; font-weight:900 !important; }
 /******************************/
 /* MESSAGE THREAD PANE */
 
+/* message list/preview separator */
+body .nH.nn[style="width: 5px;"] {
+	background: #f5f5f5;
+	box-shadow: inset -2px 0 0 -1px #d8d8d8;
+}
+
 /* wrapper */
-body .if { margin: 0px 0 8px 0px;}
+body .if { margin: 0px 0 8px 0px; }
+body .nH.ao8 { padding-right: 0 }
 
 /* header wrap */
 body .Bu > .if > .nH:first-child { background-color:rgba(0,0,0,0.03); border-bottom: 1px solid #ddd;margin-bottom:-1px;padding:7px 0 5px; z-index: 99; /*position:fixed; z-index: 99;*/ }
@@ -422,14 +430,15 @@ body .ade .T-I:hover { border-color:rgba(0,0,0,0.4)!important; background-color:
 body .hX { margin-right:3px; }
 body .hX .hN { padding-right:3px; }
 body .hX .hR > * > * { font-size:90%; }
-body .hX .hO { opacity:0.4; font-family:Verdana; font-size:11.5px; padding: 0 3px 0 2px; display:inline-block;margin: -1px 0 2px 0; line-height: 4px; } body .hX .hO:hover { opacity:1; } /* "x" (remove button) */
+body .hX .hO { opacity:0.4; font-family:Verdana; font-size:11.5px; padding: 0 3px 0 2px; display:inline-block;margin: -1px 0 2px 0; line-height: 4px; }
+body .hX .hO:hover { opacity:1; } /* "x" (remove button) */
 
 
 /******************************/
 /* SINGLE MESSAGE */
 
 /* various padding .. (does this break threaded view?)*/
-body .apN .hx { padding-left: 0; }
+body .apN .hx { padding-left: 0; padding-top: 0; }
 body .apN .hx .gs { margin-left: 5px; }
 body .acS, body .bC, body .adc, body .gS, body .ac7, body .h9, body .adI, body .aBj { margin-left: -1px; margin-right: 10px; background-color:rgba(255,240,190,0.8); border--color:rgba(210,190,100,0.8); border-radius:5px; font-style:italic; } /* inline alerts (like "images not displayed */
 
@@ -439,8 +448,9 @@ body .if { -webkit-box-shadow: 15px 0px 17px -20px rgba(0, 0, 0, 1); box-shadow:
 
 /* header */
 body .adn { margin-top: 0px;}
-body .adn .gE.iv.gt { padding-bottom:10px;margin-left: -60px; background-color: rgba(0,0,0,0.1); padding-right: 5px; padding-left: 62px; padding-top: 5px; }
+body .adn .gE.iv.gt { padding-bottom:6px;margin-left: -60px; background-color: rgba(0,0,0,0.1); padding-right: 5px; padding-left: 62px; padding-top: 5px; }
 body .adn .gE.iv.gt {  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,236,249,1)), color-stop(27%,rgba(232,244,252,1)), color-stop(69%,rgba(236,249,255,1)), color-stop(75%,rgba(237,250,255,0.81)), color-stop(100%,rgba(237,250,255,0))); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top, rgba(217,236,249,1) 0%,rgba(232,244,252,1) 27%,rgba(236,249,255,1) 69%,rgba(237,250,255,0.81) 75%,rgba(237,250,255,0) 100%); /* Chrome10+,Safari5.1+ */background: linear-gradient(to bottom, rgba(217,236,249,1) 0%,rgba(232,244,252,1) 27%,rgba(236,249,255,1) 69%,rgba(237,250,255,0.81) 75%,rgba(237,250,255,0) 100%); /* W3C */  }
+body .adn .gE.iv.gt { background:none }
 
 /* header - avatar */
 body .aju {  }
@@ -464,7 +474,15 @@ body .acZ .gK .gD::before { content:"from ";float:left; margin-right: 4px; } */
 /* header - date */
 body .gK .g3 { font-size: 87%; font-family: Tahoma; opacity:0.85; }
 /* force wrap after shorthand date */
-body .gK .g3 { width: 70px; display: inline-block; white-space: normal; text-align: right; line-height:1; }
+body .gK .g3 {
+	text-indent:15px;
+	width: 90px;
+	display: inline-block;
+	white-space: normal;
+	text-align: right;
+	line-height:1;
+}
+/* resize line breaks */
 body .gK .g3::before { content: " "; display: inline-block; width: 26px; }
 
 /* header - reply button */
