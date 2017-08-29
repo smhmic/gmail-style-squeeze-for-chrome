@@ -124,7 +124,11 @@ body .ZZ .T-I { min-width: 54px;  }
 /* * * * * * * * * * * */
 /* g suite header 2017 */
 body .gb_kf,
-body .gb_mf {
+body .gb_mf,
+body .gb_pf,
+body .gb_T .gb_og {
+	height: 36px;
+} {
 	height: 36px;
 }
 body #gba,
@@ -139,8 +143,17 @@ body #gbq1 * {
 	max-height: 100%;
 	height: 100%;
 	text-align: center;
+	vertical-align: top;
 }
-body #gbq1 .gb_0b { position: static }
+body #gbq1 .gb_0b,
+body #gbq1 .gb_1b,
+body #gbq1 .gb_2b,
+body #gbq1 .gb_3b,
+body #gbq1 .gb_4b,
+body #gbq1 .gb_5b,
+body #gbq1 .gb_6b,
+body #gbq1 .gb_7b,
+body #gbq1 .gb_8b { position: static }
 /* search bar */
 body #gbq2 {
 	    padding-top: 3px;
@@ -153,6 +166,7 @@ body .gb_R.gb_hg {
 body .G-atb {
     padding-bottom: 2px;
     margin-top: -2px;
+		padding-right: 0px;
 }
 
 /* mail/contacts/tasks switcher */
