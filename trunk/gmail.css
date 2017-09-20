@@ -123,20 +123,17 @@ body .ZZ .T-I { min-width: 54px;  }
 
 /* * * * * * * * * * * */
 /* g suite header 2017 */
-body .gb_kf,
-body .gb_mf,
-body .gb_pf,
-body .gb_T .gb_og {
-	height: 36px;
-} {
-	height: 36px;
-}
+
 body #gba,
-body .gb_kf>.gb_R,
-body .gb_mf>.gb_R {
+body #gb > [class],
+body #gb .gb_R {
 	height: 36px;
-line-height: 34px;
+  line-height: 34px;
 }
+body #gb .gb_R.gb_Bb { /* undo above rule to restore spacing in account switcher popuop */
+	line-height: normal;
+}
+
 /* logo */
 body #gbq1,
 body #gbq1 * {
@@ -158,8 +155,13 @@ body #gbq1 .gb_8b { position: static }
 body #gbq2 {
 	    padding-top: 3px;
 }
-/* G account toobar */
-body .gb_R.gb_hg {
+/* G account toolbar */
+body #gb [style="min-width: 150px;"] {
+	padding-right:4px;
+}
+/* avatar */
+body #gb a.gb_R[href^="https://accounts.google.com/SignOutOptions?"] > span{
+	margin:2px -1px 0;
 }
 
 /* messages toolbar */
@@ -169,11 +171,17 @@ body .G-atb {
 		padding-right: 0px;
 }
 
+/* default inbox personal/social/updates/etc tabs */
+body .aKh {
+	height:37px;
+	margin-top: -7px;
+}
+
 /* mail/contacts/tasks switcher */
 body .akh {
 	text-align: center;
 	display: block;
-	margin-top: -3px;
+	margin-top: -7px;
 }
 /* compose btn */
 body .aic {
@@ -188,18 +196,21 @@ html body .pp.aki {
 	padding-right: 0;
 	margin-right: 0;
 }
+html body .pp.aki {
+	margin-top: 5px;
+	padding-bottom: 17px;
+}
 body .bQ{
 	 padding-right: 0;
 }
 /* labels list */
-body [id=":qk"].oo {
+body .oo.oo {
 	margin-right:0;
 }
-/* contacts list */
+/* chat contacts list */
 body .aeN .akc {
-	    margin-right: 12px;
+	    margin-right: 6px;
 }
-
 
 /******************************/
 /* MESSAGE LIST */
@@ -360,7 +371,7 @@ body .gbet#gbq2, body .gbeti#gb #gbq2, body .gbes#gbq2, body .gbesi#gb #gbq2 { m
 body .LrBjie, body .LrBjie div { overflow:visible!important; }
 body .LrBjie .TO { padding:0; }
 body .LrBjie .nU { margin:0 auto;  }
-body .LrBjie .aim { width: 47%; float:left; margin: 0 0 -1px -1px; padding: 0;  }
+body .LrBjie .aim { width: 48%; float:left; margin: 0 0 -1px -1px; padding: 0;  }
 body .LrBjie .aim > div { margin: 0; padding: 0 0 1px 3px; max-width: 100%; border-width: 0; }
 body .LrBjie .aim * { height: 100%; text-align: center; vertical-align:middle;  }
 body .LrBjie .aim .aio { margin-left:0px!important;   }
@@ -471,6 +482,7 @@ body .aju {  }
 body .aju img { float:left;margin-right: 3px; }
 body .aju img[src="https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png"] { width:0;margin-right:-20px; }/*blankavatar*/
 
+
 /* header - from */
 body .go + .go { display: block; font-size: 80%; } /* "via" */
 body .acZ { height: 14px; }
@@ -500,7 +512,8 @@ body .gK .g3 {
 body .gK .g3::before { content: " "; display: inline-block; width: 26px; }
 
 /* header - reply button */
-body .adn .acX .aaq { margin-top: -1px; }
+body .adn .acX .bsQ,
+body .adn .acX .aaq { margin-top: 0; }
 
 /* body */
 body .hx .ii { font-size:76%;margin-left:8px; }
